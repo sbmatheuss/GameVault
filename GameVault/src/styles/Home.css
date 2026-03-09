@@ -1,0 +1,43 @@
+:root{
+    --var-text-logo: 3em;
+    --var-text-casual: 1.5em;
+
+    --var-color-text-normal: white;
+}
+.container {
+    width: 100vw;
+    padding: 5em;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: rgb(33, 53, 46);
+    height: 123px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: var(--var-text-logo);
+}
+.justify-align-center {
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.font_m {
+font-size: var(--var-text-casual);
+}
+
+.c_text {
+    color: var(--var-color-text-normal);
+}
+.NavBar a {
+    color: var(--var-color-text-normal);
+    padding: 0px 5px;
+}
+
+.NavBar {
+    padding: 0em 5em;
+}
