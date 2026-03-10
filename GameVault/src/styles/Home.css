@@ -11,7 +11,8 @@
 }
 
 .header {
-    background-color: rgb(33, 53, 46);
+    background-color: #050816;
+    color: white;
     height: 123px;
     display: flex;
     justify-content: space-between;
@@ -41,3 +42,79 @@ font-size: var(--var-text-casual);
 .NavBar {
     padding: 0em 5em;
 }
+
+.featured-card{
+  position: relative;
+  max-width: 778px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.featured-img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+
+.featured-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 41%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 40px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(10,15,35,0.95) 0%,
+    rgba(10,15,35,0.7) 40%,
+    rgba(10,15,35,0) 100%
+  );
+
+  color: white;
+}
+
+.featured-label{
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.featured-title{
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.featured-info{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.price{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.details-btn{
+  background: #4a6cf7;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.details-btn:hover{
+  background: #3651d4;
+}
+
+
