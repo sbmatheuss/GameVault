@@ -4,11 +4,6 @@
 
     --var-color-text-normal: white;
 }
-.container {
-    width: 100vw;
-    padding: 5em;
-    box-sizing: border-box;
-}
 
 .header {
     background-color: #050816;
