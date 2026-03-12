@@ -1,10 +1,25 @@
- import '../styles/Home.css'
- import images from '../images/card-cyberpunk.jpg'
- import LogoImg from '../images/logo-gamevault.png'
- import {User, Heart, ShoppingCart, Search} from "lucide-react"
+  import '../styles/Home.css'
+  import images from '../images/card-cyberpunk.jpg'
+  import LogoImg from '../images/logo-gamevault.png'
+  import {User, Heart, ShoppingCart, Search, Rocket, Crown, Calendar, Monitor} from "lucide-react"
 
- export function Home() {
-   return (
+  import { FaPlaystation, FaXbox } from 'react-icons/fa'
+  
+
+
+  export function Home() {
+
+    const categories = [
+    { id: 1, label: 'New Releases', icon: <Rocket />, color: 'blue' },
+    { id: 2, label: 'Best Sellers', icon: <Crown />, color: 'blue' },
+    { id: 3, label: 'Pre-Orders', icon: <Calendar />, color: 'blue' },
+    { id: 4, label: 'PC', icon: <Monitor />, color: 'white' },
+    { id: 5, label: 'PS5', icon: <FaPlaystation />, color: 'white' },
+    { id: 6, label: 'Xbox', icon: <FaXbox />, color: 'green' },
+  ];
+
+
+    return (
     <div>
       <nav className="navbar">
       <div className="logo-container">
@@ -61,17 +76,25 @@
 
       </div>
 
+        {/* --- NOVA SEÇÃO DE CATEGORIAS --- */}
+      <section className="categories-container">
+        <h3 className="categories-title">BROWSE CATEGORIES</h3>
+        <div className="categories-grid">
+          {categories.map((cat) => (
+            <div key={cat.id} className="category-item">
+              <div className={`category-icon ${cat.color}`}>
+                {cat.icon}
+              </div>
+              <span className="category-name">{cat.label}</span>
+            </div>
+          ))}
+        </div>
+      </section>
 
 
-          <div className='card-categories'>
-                <div><span>New Releases</span></div>
-                <div><span>Best Sellers</span></div>
-                <div><span>Pre-Orders</span></div>
-                <div><span>PC</span></div>
-                <div><span>PS5</span></div>
-                <div><span>xBOX</span></div>
-                <div><span>Nintendo Switch</span></div>
-          </div>
+          
     </div>
   );
 }
+
+  
