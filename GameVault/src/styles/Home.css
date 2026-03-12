@@ -5,43 +5,99 @@
     --var-color-text-normal: white;
 }
 
-.header {
-    background-color: #050816;
-    color: white;
-    height: 123px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo {
-    font-size: var(--var-text-logo);
-}
-.justify-align-center {
-     display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0b0e18; /* Cor bem escura do fundo */
+  padding: 36px 40px;
+  color: white;
+  font-family: 'Inter', sans-serif;
 }
 
-.font_m {
-font-size: var(--var-text-casual);
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.c_text {
-    color: var(--var-color-text-normal);
-}
-.NavBar a {
-    color: var(--var-color-text-normal);
-    padding: 0px 5px;
+.logo-text {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
 }
 
-.NavBar {
-    padding: 0em 5em;
+/* Busca */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #1a1f2e;
+  border: 1px solid #2d3446;
+  border-radius: 8px;
+  padding: 15px 15px;
+  width: 40%; /* Ajuste conforme necessário */
 }
+
+.search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  margin-left: 10px;
+  width: 100%;
+}
+
+/* Ações */
+.nav-actions {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #8a8f9d;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-item svg {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.nav-item:hover {
+  color: white;
+}
+
+/* Badge do Carrinho */
+.cart-item {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  background-color: #3b82f6; /* Azul do badge */
+  color: white;
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+
 
 .featured-card{
   position: relative;
-  max-width: 778px;
+  max-width: 1180px;
   margin: auto;
+  margin-top: 20px;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid rgba(255,255,255,0.2);
@@ -49,7 +105,7 @@ font-size: var(--var-text-casual);
 
 .featured-img{
     width: 100%;
-    height: 300px;
+    height: 290px;
     display: block;
     object-fit: cover;
 }
@@ -83,7 +139,7 @@ font-size: var(--var-text-casual);
 }
 
 .featured-title{
-  font-size: 32px;
+  font-size: 24px;
   margin: 10px 0;
 }
 

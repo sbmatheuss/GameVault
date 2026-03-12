@@ -1,27 +1,42 @@
  import '../styles/Home.css'
  import images from '../images/card-cyberpunk.jpg'
+ import LogoImg from '../images/logo-gamevault.png'
+ import {User, Heart, ShoppingCart, Search} from "lucide-react"
 
  export function Home() {
    return (
     <div>
-      <header className="header container">
-        <div className='logo'>GameVaut</div>
-        <div className='justify-align-center'>
-          <nav className='NavBar font_m c_text'>
-            <a href="#">iten</a>
-            <a href="#">iten</a>
-            <a href="#">iten</a>
-            <a href="#">iten</a>
-          </nav>
-          <div>
-            cart
-          </div>
-          <div>
-            perfil
-          </div>
+      <nav className="navbar">
+      <div className="logo-container">
+        <img src={LogoImg} width="90px" alt="GameVault Logo" />
+        <span className="logo-text">GAMEVAULT</span>
+      </div>
 
+      <div className="search-container">
+        <Search />
+        <input 
+          type="text" 
+          placeholder="Search for Elden Ring, PS5 games..." 
+          className="search-input"
+        />
+      </div>
+
+      <div className="nav-actions">
+        <div className="nav-item">
+          <User />
+          <span>Account</span>
         </div>
-      </header>
+        <div className="nav-item">
+          <Heart />
+          <span>Wishlist</span>
+        </div>
+        <div className="nav-item cart-item">
+          <ShoppingCart />
+          <span className="cart-badge">3</span>
+          <span>Cart</span>
+        </div>
+      </div>
+    </nav>
       
       <div className="featured-card">
 
