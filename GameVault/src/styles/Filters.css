@@ -1,0 +1,32 @@
+/* Container pai que alinha o filtro e o conteúdo */
+.main-layout {
+  display: flex;
+  align-items: flex-start; /* Mantém o filtro no topo da página */
+  gap: 30px;      
+
+  width: 100%;           /* Garante que ocupe a tela toda */
+  max-width: 1600px;     /* Aumente o limite para ele se espalha mais */
+  margin: 0;             /* Remove o auto que centraliza */
+  padding-left: 120px;
+}
+
+/* Coluna do Filtro */
+.sidebar {
+  width: 280px;            /* Largura fixa do seu filtro conforme a imagem */
+  flex-shrink: 0;  
+  margin-left: 0;        /* Impede o filtro de encolher */
+}
+
+/* Coluna do Conteúdo (Banner + Categorias) */
+.content-side {
+  flex: 1;                 /* Faz o conteúdo ocupar todo o espaço restante */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;               /* Espaço vertical entre banner e categorias */
+}
+
+/* Garante que o banner do Cyberpunk se ajuste à coluna da direita */
+.featured-card {
+  width: 100%;
+  margin: 0;
+}
