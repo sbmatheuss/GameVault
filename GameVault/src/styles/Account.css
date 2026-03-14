@@ -1,0 +1,24 @@
+:root {
+  ---var-color-gradient-one: blue;
+  ---var-color-gradient-two: blue;
+  ---var-color-gradient-thee: blue;
+}
+
+.account-container-area {
+  min-height: 100vh;
+  width: 750px;
+  margin: auto;
+}
+.area-profile-hero {
+  background-color: rgb(5, 5, 73);
+}
+
+.hero-profile-area {
+    
+}
+
+.info-user-name-suname {
+}
+
+.area-profile-controllers {
+}

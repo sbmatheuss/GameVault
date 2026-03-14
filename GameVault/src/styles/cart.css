@@ -7,19 +7,11 @@
   --text-muted: #94a3b8;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+.cart-page-container {
   box-sizing: border-box;
   font-family: "Segoe UI", sans-serif;
-}
-
-body {
   background: var(--bg-dark);
   color: var(--text-main);
-}
-
-.cart-page-container {
   min-height: 100vh;
   padding: 2rem;
 }
@@ -82,7 +74,9 @@ body {
   background: var(--bg-card);
   padding: 1rem;
   border-radius: 12px;
-  transition: transform 0.2s, border 0.2s;
+  transition:
+    transform 0.2s,
+    border 0.2s;
 }
 
 .game-card:hover {
