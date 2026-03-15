@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router"
 import { Home } from "./pages/Home"
-import { Cart } from "./pages/Card"
+import { Cart } from "./components/Card"
+import { Account } from "./pages/account"
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <Routes>
       <Route path="/" element={ <Home />} />
       <Route path="/cart" element={ <Cart />} />
+      <Route path="/account" element={ <Account />} />
     </Routes>
     </BrowserRouter>
   )
