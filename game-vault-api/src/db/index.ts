@@ -3,7 +3,6 @@ import mysql from "mysql2/promise";
 import * as schema from "./schema"
 
 const urlDatabase = process.env.DATABASE_URL
-console.log("foi ",urlDatabase)
 
 if (!urlDatabase) throw new Error("urlDatabase não disponivel")
 
