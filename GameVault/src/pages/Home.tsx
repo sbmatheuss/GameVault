@@ -10,7 +10,7 @@ import {
   Rocket, Crown, Calendar, Monitor, X, ShoppingBag
 } from 'lucide-react'
 import { FaPlaystation, FaXbox } from 'react-icons/fa'
-import { Filters } from '../components/Filters'
+import { Filters } from '../components/filters'
 import { useNavigate } from 'react-router'
 
 const games = [
