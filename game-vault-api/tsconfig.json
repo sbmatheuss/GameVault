@@ -17,4 +17,8 @@
   },
   "include": ["src"],
   "exclude": ["drizzle.config.ts"]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2eb1a1e76185bdd195a912461f093ca6f2075aad
