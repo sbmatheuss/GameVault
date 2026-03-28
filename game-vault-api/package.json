@@ -2,13 +2,13 @@
   "name": "game-vault-api",
   "version": "0.1.0",
   "description": "",
-<<<<<<< HEAD
   "license": "ISC",
   "author": "",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start:dev": "tsx ./src/server.ts",
+    "start:dev": "tsx --watch --env-file=.env ./src/server.ts",
+     "start:debug": "node --inspect=9229 --enable-source-maps --import tsx --watch --env-file=.env ./src/server.ts",
     "db": "npx drizzle-kit"
   },
   "dependencies": {
@@ -23,20 +23,5 @@
   },
   "devDependencies": {
     "drizzle-kit": "^0.31.10"
-=======
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "tsx ./src/server.ts"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^5.2.1",
-    "tsx": "^4.21.0"
-  },
-  "devDependencies": {
-    "@types/express": "^5.0.6"
->>>>>>> 2eb1a1e76185bdd195a912461f093ca6f2075aad
   }
 }

@@ -1,23 +1,14 @@
 import express from 'express'
-<<<<<<< HEAD
+import { router } from './routes'
+import { errorHandler } from './core/errors/errorhandler'
 
 const app = express()
 
-
-app.get('/', (req, res ) => {
-  res.send('Hello World!')
-})
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
 
-export { app }
-=======
-const app = express()
-
-
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+app.use(router)
+app.use(errorHandler)
 
 export { app }
-
->>>>>>> 2eb1a1e76185bdd195a912461f093ca6f2075aad

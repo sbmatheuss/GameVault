@@ -3,22 +3,34 @@
   "_version": "22.0.0",
 
   "compilerOptions": {
-    "lib": ["es2024", "ESNext.Array", "ESNext.Collection", "ESNext.Iterator"],
-    "module": "nodenext",
-    "target": "es2022",
+    "lib": ["es2024"],
+    "module": "NodeNext",
+    "target": "ES2022",
 
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "moduleResolution": "node16",
-    "outDir": "dist",
+    "moduleResolution": "NodeNext",
+
     "rootDir": "src",
+    "outDir": "dist",
+
+    /* DEBUG ESSENCIAL */
+    "sourceMap": true,
+    "inlineSources": true,
+
+    /* COMPATIBILIDADE */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* TSX / EXECUÇÃO MODERNA */
     "isolatedModules": true,
+
+    /* QUALIDADE */
+    "strict": true,
+    "skipLibCheck": true,
+
+    /* OPCIONAL (melhora stack trace no Node) */
+    "resolveJsonModule": true
   },
+
   "include": ["src"],
-  "exclude": ["drizzle.config.ts"]
-<<<<<<< HEAD
+  "exclude": ["node_modules", "dist", "drizzle.config.ts"]
 }
-=======
-}
->>>>>>> 2eb1a1e76185bdd195a912461f093ca6f2075aad
