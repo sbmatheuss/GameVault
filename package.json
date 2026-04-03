@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "drizzle-orm": "^0.45.2",
+    "mysql2": "^3.20.0"
+  }
+}
