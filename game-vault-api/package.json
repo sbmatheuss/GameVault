@@ -8,11 +8,10 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "tsx --watch --env-file=.env ./src/server.ts",
-     "start:debug": "node --inspect=9229 --enable-source-maps --import tsx --watch --env-file=.env ./src/server.ts",
+    "start:debug": "node --inspect=9229 --enable-source-maps --import tsx --watch --env-file=.env ./src/server.ts",
     "db": "npx drizzle-kit"
   },
   "dependencies": {
-    "-": "^0.0.1",
     "@types/express": "^5.0.6",
     "cross-env": "^10.1.0",
     "dotenv": "^17.3.1",
@@ -22,6 +21,7 @@
     "tsx": "^4.21.0"
   },
   "devDependencies": {
-    "drizzle-kit": "^0.31.10"
+    "drizzle-kit": "^0.31.10",
+    "typescript": "^6.0.2"
   }
 }
